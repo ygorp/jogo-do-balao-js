@@ -11,6 +11,20 @@
       background-color: #120907;
     }
 
+    .score {
+      color:#ffffff;
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 30px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 400 bold;
+      padding: 30px;
+      border-radius: 5px;
+      border: 4px solid #1e2644;
+      margin-left: 50px;
+      margin-top: 60px;
+    }
+
     a button {
       margin-top: 80px;
       margin-left: 80px;
@@ -29,7 +43,7 @@
     .balao {
       margin-top: 50px;
       width: 50px;
-      height: 60px;
+      height: 80px;
       background-color: red;
       border-radius: 35px;
       position: absolute;
@@ -51,6 +65,8 @@
 <body onload="carregarJogo()">
 
   <a href="/inicial.html"><button>Voltar</button></a>
+
+  <button class="score" id="total"></button class="score">
   
 </body>
 </html>

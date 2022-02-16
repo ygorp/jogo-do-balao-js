@@ -2,6 +2,8 @@
 // 2 Estourar o balao
 // 3 Carregar o jogo
 
+var total= 0;
+
 function criarBalao() {
 
   var balao = document.createElement("div");
@@ -27,6 +29,10 @@ function criarBalao() {
 
 function estourar(objeto) {
   document.body.removeChild(objeto);
+
+  total++;
+  var score = document.getElementById('total');
+  score.innerHTML = "Baloes estourados: " + total;
 }
 
 function carregarJogo() {
